@@ -400,9 +400,63 @@ background-size: cover;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ดที่นี่]
+[<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/button.css">
+</head>
+<body>
+<div class="product-list">
+    <div class="product-card">
+        <img class="product-image" src="images/golden.png" alt="สินค้าตัวอย่าง">
+        <div class="product-info">
+            <h2 class="product-title">สินค้าตัวอย่าง</h2>
+            <p class="product-price">฿1,999</p>
+            <p class="product-description">
+                รายละเอียดสินค้าตัวอย่าง ที่มีความน่าสนใจและน่าใช้งาน
+            </p>
+            <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+        </div>
+    </div>
+    <div class="product-card">
+        <img class="product-image" src="images/golden2.png" alt="สินค้าตัวอย่าง">
+        <div class="product-info">
+            <h2 class="product-title">สินค้าตัวอย่าง</h2>
+            <p class="product-price">฿1,999</p>
+            <p class="product-description">
+                รายละเอียดสินค้าตัวอย่าง ที่มีความน่าสนใจและน่าใช้งาน
+            </p>
+            <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+        </div>
+    </div>
+    <div class="product-card">
+        <img class="product-image" src="images/mlbb.png" alt="สินค้าตัวอย่าง">
+        <div class="product-info">
+            <h2 class="product-title">สินค้าตัวอย่าง</h2>
+            <p class="product-price">฿1,999</p>
+            <p class="product-description">
+                รายละเอียดสินค้าตัวอย่าง ที่มีความน่าสนใจและน่าใช้งาน
+            </p>
+            <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+        </div>
+    </div>
+    <div class="product-card">
+        <img class="product-image" src="images/ygo.png" alt="สินค้าตัวอย่าง">
+        <div class="product-info">
+            <h2 class="product-title">สินค้าตัวอย่าง</h2>
+            <p class="product-price">฿1,999</p>
+            <p class="product-description">
+                รายละเอียดสินค้าตัวอย่าง ที่มีความน่าสนใจและน่าใช้งาน
+            </p>
+            <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>]
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![alt text](<images/Screenshot 2569-02-19 at 16.09.16.png>)
 
 [](#การทดลองที่-4-การจัดการขนาดและระยะห่าง)
 ## การทดลองที่ 4: การจัดการขนาดและระยะห่าง
@@ -498,12 +552,75 @@ border: 1px solid black;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ด HTML ที่นี่]
+[<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/button.css">
+</head>
+<body>
+    <div class="stats-container">
+        <div class="stat-box">
+            <div class="stat-number">1,234</div>
+            <div class="stat-label">ผู้ใช้งาน</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">5.6K</div>
+            <div class="stat-label">ยอดขาย</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">ความพึงพอใจ</div>
+        </div>
+    </div>
+</body>
+</html>]
 ```
 ```css
-[วางโค้ด CSS ที่นี่]
+[        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 2400px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .stat-box {
+            flex: 1;
+            margin: 0 25px;
+            padding: 4rem;
+            text-align: center;
+            background-color: rgb(0, 0, 0);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 3rem;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .stats-container {
+                flex-direction: column;
+            }
+
+            .stat-box {
+                margin: 1rem 0;
+            }
+        }]
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![alt text](images/lab4.png)
 
 [](#การทดลองที่-5-การจัดการข้อความและฟอนต์)
 ## การทดลองที่ 5: การจัดการข้อความและฟอนต์
